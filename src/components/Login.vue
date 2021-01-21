@@ -17,7 +17,7 @@
         <el-form-item prop="username">
           <el-input
             v-model="loginForm.username"
-            prefix-icon="iconfont icon-user"
+            prefix-icon="iconfont icon-user1"
           ></el-input>
         </el-form-item>
         <!-- 密码 -->
