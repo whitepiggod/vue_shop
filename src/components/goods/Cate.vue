@@ -58,7 +58,7 @@
           <el-input v-model="addCateForm.cat_name"></el-input>
         </el-form-item>
       </el-form>
-      <el-form :model="addCateForm" :rules="addCateFormRoles" ref="addCateFormref" label-width="100px">
+      <el-form :model="addCateForm" :rules="addCateFormRoles" ref="addCateFormRef" label-width="100px">
         <el-form-item label="父级分类:">
           <!-- options 用来指定数据源 -->
           <!-- props 用来指定配置对象 -->
@@ -292,14 +292,11 @@ export default {
 }
 </script>
 
-<style lang="scss" scpoed>
+<style lang="scss" scoped>
 .treeTable {
   margin-top: 15px;
 }
 .el-cascader {
   width: 100%;
-}
-.el-cascader-menu {
-  height: 200px;
 }
 </style>
