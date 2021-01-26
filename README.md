@@ -1,5 +1,8 @@
 # vue_shop
 
+## Date：2021-1-27
+根据视频完成的vue商城项目
+
 ## Project setup
 ```
 npm install
