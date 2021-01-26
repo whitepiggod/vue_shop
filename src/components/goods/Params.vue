@@ -238,7 +238,6 @@ export default {
     // 监听添加对话框的关闭事件
     addDialogClosed() {
       this.$refs.addFormRef.resetFields()
-      console.log(this.$refs.addFormRef.resetFields)
     },
     // 点击按钮添加参数
     addParams() {

@@ -186,7 +186,7 @@ export default {
     // 获取商品分类数据
     async getCateList() {
       const { data: res } = await this.$http.get('categories', { params: this.queryInfo })
-      if (res.meta.status !== 200) return this.$messgae('获取商品失败！')
+      if (res.meta.status !== 200) return this.$message.error('获取商品失败！')
       // 把数据列表，复制给catelist
       this.catelist = res.data.result
       // 为总数据条数赋值
@@ -214,7 +214,7 @@ export default {
       const { data: res } = await this.$http.get('categories', {
         params: { type: 2 }
       })
-      if (res.meta.status !== 200) return this.$messgae.error('获取父级分类数据失败！')
+      if (res.meta.status !== 200) return this.$message.error('获取父级分类数据失败！')
       this.parentCateList = res.data
     },
     // 选择项发生变化触发这个函数
@@ -254,7 +254,7 @@ export default {
     // 修改分类
     async editCategories(id) {
       const { data: res } = await this.$http.get('categories/' + id)
-      if (res.meta.status !== 200) return this.$messgae.error('无法获取数据！')
+      if (res.meta.status !== 200) return this.$message.error('无法获取数据！')
       this.editCateForm = res.data
       this.editCateDialogVisible = true
     },
